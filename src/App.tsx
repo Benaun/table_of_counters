@@ -1,8 +1,11 @@
+import { observer } from "mobx-react-lite";
+import Table from "./components/table";
 
-const App = () => {
+
+const App = observer(() => {
   return (
-    <h1>Hello</h1>
-  )
-}
+    <Table />
+  );
+})
 
 export default App
